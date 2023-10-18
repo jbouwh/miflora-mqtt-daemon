@@ -303,7 +303,7 @@ elif reporting_mode == 'mqtt-homie':
 
         mqtt_client[flora_name.lower()].publish('{}/light/$name'.format(sensor_path), 'light', 1, True)
         mqtt_client[flora_name.lower()].publish('{}/light/$settable'.format(sensor_path), 'false', 1, True)
-        mqtt_client[flora_name.lower()].publish('{}/light/$unit'.format(sensor_path), 'lux', 1, True)
+        mqtt_client[flora_name.lower()].publish('{}/light/$unit'.format(sensor_path), 'lx', 1, True)
         mqtt_client[flora_name.lower()].publish('{}/light/$datatype'.format(sensor_path), 'integer', 1, True)
         mqtt_client[flora_name.lower()].publish('{}/light/$format'.format(sensor_path), '0:50000', 1, True)
         mqtt_client[flora_name.lower()].publish('{}/light/$retained'.format(sensor_path), 'true', 1, True)
